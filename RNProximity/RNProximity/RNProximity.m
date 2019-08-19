@@ -21,6 +21,11 @@
     return self;
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
